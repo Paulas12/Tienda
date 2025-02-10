@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #4c5c3c;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Aumentar la separación entre productos */
+    flex-wrap: wrap; /* Permitir que los productos se acomoden en varias líneas si es necesario */
+}
+
+.producto {
+    background: white;
+    padding: 20px; /* Reducir padding para evitar exceso de espacio */
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px gray;
+    width: 200px; /* Ajustar tamaño */
+    text-align: center;
+}
+
+.producto img {
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    height: 200px; /* Altura fija para mantener proporción */
+    object-fit: cover; /* Asegurar que la imagen se recorte correctamente */
+    border-radius: 5px; /* Opcional, para esquinas redondeadas */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#whatsapp {
+    display: inline-block;
+    padding: 10px;
+    background: #0d923e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.info-link {
+    display: block; /* Lo hace ocupar toda la línea, quedando debajo del botón */
+    margin-top: 5px;
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}

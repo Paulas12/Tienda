@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghu.Tienda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="imagenes/Logo raghu.jpg" alt="Raghu Medallones">
+        <h1>Raghu Medallones</h1>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Nosotros</h2>
+        <p>Ofrecemos medallones vegetarianos congelados, saludables y deliciosos. ¡Probá la mejor opción natural!</p>
+    </section>
+
+    <section id="catalogo">
+        <h2>Nuestros Productos</h2>
+        <div class="productos">
+            <div class="producto">
+                <img src="imagenes/lentejaIA.jpg" alt="Medallón de Lentejas">
+                <h3>Medallón de Lentejas</h3>
+                <p>$500 c/u</p>
+                <button onclick="agregarAlCarrito('Medallón de Lentejas', 500)">Agregar</button>
+                <a href="lenteja.html" class="info-link">Info</a>
+            </div>
+            <div class="producto">
+                <img src="imagenes/garbanzoIA.jpg" alt="Medallón de Garbanzos">
+                <h3>Medallón de Garbanzos</h3>
+                <p>$600 c/u</p>
+                <button onclick="agregarAlCarrito('Medallón de Garbanzos', 600)">Agregar</button>
+                <a href="garbanzo.html" class="info-link">Info</a>
+            </div>
+            <div class="producto">
+                <img src="imagenes/porotoMungIA.jpg" alt="Medallón de Poroto Mung">
+                <h3>Medallón de Poroto Mung</h3>
+                <p>$600 c/u</p>
+                <button onclick="agregarAlCarrito('Medallón de Poroto Mung', 600)">Agregar</button>
+                <a href="porotoMung.html" class="info-link">Info</a>
+            </div>
+            <div class="producto">
+                <img src="imagenes/sojaTexturizada.jpg" alt="Medallón de Soja Texturizada">
+                <h3>Medallón de Soja Texturizada</h3>
+                <p>$600 c/u</p>
+                <button onclick="agregarAlCarrito('Medallón de Soja Texturizada', 600)">Agregar</button>
+                <a href="sojaTexturizada.html" class="info-link">Info</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p>Total: $<span id="total">0</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+    </section>
+
+    <footer>
+        <a href="https://wa.me/tu_numero" id="whatsapp">Pedir por WhatsApp</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
