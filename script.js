@@ -19,9 +19,9 @@ function actualizarCarrito() {
 }
 
 function finalizarCompra() {
-    let mensaje = "¡Hola! Quiero comprar:\n";
+    let mensaje = "¡Hola! Quiero hacer un pedido de medallones:\n";
     carrito.forEach(item => mensaje += `- ${item.nombre} - $${item.precio}\n`);
     mensaje += `Total: $${total}`;
-    let url = `https://wa.me/tu_numero?text=${encodeURIComponent(mensaje)}`;
+    let url = `https://wa.me/5493764835650?text=${encodeURIComponent(mensaje)}`;
     window.location.href = url;
 }
